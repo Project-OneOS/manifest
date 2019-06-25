@@ -718,4 +718,7 @@
   <project name="toolchain_binutils" path="toolchain/binutils"/>
   <project name="toolchain_pgo-profiles" path="toolchain/pgo-profiles"/>
 
+  <!-- Include-->
+  <include name="remove.xml" />
+
 </manifest>

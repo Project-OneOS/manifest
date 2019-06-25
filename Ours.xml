@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Github remote -->
+    <remote name="github"
+        fetch="https://github.com/" />
+
+   <remote name="ours"
+	  fetch="https://github.com/AOSP-CAF-MSM8916/"/>
+
+   <remote name="los"
+	  fetch="https://github.com/LineageOS/"
+	  revision="lineage-16.0"/>
+
+<project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" groups="pdk-fs" remote="los"/>
+<project path="build/make" name="build_make" groups="pdk" remote="ours" revision="pie-caf" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+</project>
+<project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="ours" revision="pie-caf" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+</project>
+<project path="bionic" name="bionic" groups="pdk" remote="ours" revision="pie-caf"/>
+<project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="ours" revision="pie-caf"/>
+<project path="external/selinux" name="external_selinux" groups="pdk" remote="ours" revision="pie-caf"/>
+<project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="los" revision="lineage-15.1" />
+<project path="frameworks/av" name="frameworks_av" groups="pdk" remote="ours" revision="pie-caf"/>
+<project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="ours" revision="pie-caf"/>
+<project path="frameworks/native" name="frameworks_native" groups="pdk" remote="ours" revision="pie-caf"/>
+<project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="ours" revision="pie-caf"/>
+<project path="hardware/qcom/bt" name="hardware_qcom_bt" groups="qcom,pdk" remote="ours" revision="pie-caf"/>
+<project path="hardware/qcom/bt-caf" name="hardware_qcom_bt" groups="qcom,pdk" remote="ours" revision="pie-caf-caf"/>
+<project path="hardware/qcom/display-caf/msm8916" name="hardware_qcom_display-caf_msm8916" remote="ours" revision="pie-caf"/>
+<project path="hardware/qcom/media-caf/msm8916" name="hardware_qcom_media-caf_msm8916" remote="ours" revision="pie-caf"/>
+<project path="hardware/qcom/audio-caf/msm8916" name="hardware_qcom_audio-caf_msm8916" remote="ours" revision="pie-caf"/>
+<project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk" remote="ours" revision="pie-caf" />
+<project path="hardware/qcom/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk" remote="ours" revision="pie-caf"/>
+<project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan" groups="pdk" remote="ours" revision="pie-caf-caf"/>
+<project path="hardware/ril" name="hardware_ril" groups="pdk" remote="ours" revision="pie-caf"/>
+<project path="hardware/ril-caf" name="hardware_ril" groups="pdk" remote="ours" revision="pie-caf-caf"/>
+<project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="ours" revision="pie-caf"/>
+<project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="ours" revision="pie-caf"/>
+<project path="system/bt" name="system_bt" groups="pdk" remote="ours" revision="pie-caf"/>
+<project path="system/core" name="system_core" groups="pdk" remote="ours" revision="pie-caf"/>
+<project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="ours" revision="pie-caf"/>
+<project path="system/vold" name="system_vold" groups="pdk" remote="ours" revision="pie-caf"/>
+<project path="vendor/qcom/opensource/dataservices" name="vendor_qcom-opensource_dataservices" remote="ours" revision="data.lnx.3.0.r23-rel" />
+<project path="system/tools/dtbtool" name="system_tools_dtbtool" remote="ours" revision="pie-caf" />
+
+</manifest>
