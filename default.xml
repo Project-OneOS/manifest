@@ -3,19 +3,15 @@
 
   <remote name="caf"
           fetch="git://codeaurora.org/quic/la"
-          review="codeaurora.org"
-          revision="refs/tags/LA.UM.7.3.r1-07800-sdm845.0" />
+          review="codeaurora.org" />
 
   <remote name="aosp"
           fetch="https://android.googlesource.com"
           review="https://android-review.googlesource.com/"
           revision="refs/tags/android-9.0.0_r40" />
 
-  <remote name="aosp-caf-upstream"
-          fetch="https://github.com/aosp-caf-upstream" />
-
-  <default revision="pie"
-           remote="aosp-caf-upstream"
+  <default revision="refs/tags/LA.UM.7.3.r1-07800-sdm845.0"
+           remote="caf"
            sync-j="4"
            sync-c="true"
            sync-f="true" />
