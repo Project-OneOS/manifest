@@ -38,6 +38,9 @@
 <project path="frameworks/native" name="caf_frameworks_native" groups="pdk" remote="test" revision="pie"/>
 <project path="frameworks/opt/telephony" name="caf_frameworks_opt_telephony" groups="pdk" remote="test" revision="pie"/>
 <project path="hardware/libhardware" name="caf_hardware_libhardware" groups="pdk" remote="test" revision="pie"/>
+<project path="hardware/qcom/audio-caf/msm8916" name="hardware_qcom_audio" remote="ours" revision="pie-caf"/>
+<project path="hardware/qcom/display-caf/msm8916" name="hardware_qcom_display" remote="ours" revision="pie-caf"/>
+<project path="hardware/qcom/media-caf/msm8916" name="hardware_qcom_media" remote="ours" revision="pie-caf"/>
 <project path="hardware/qcom/power" name="caf_hardware_qcom_power" remote="test" revision="pie"/>
 <project path="hardware/interfaces" name="caf_hardware_interfaces" remote="test" revision="pie"/>
 <project path="hardware/ril" name="caf_hardware_ril" groups="pdk" remote="test" revision="pie"/>
