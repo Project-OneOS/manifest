@@ -15,6 +15,7 @@
   <remove-project name="device/google/muskie"/>
   <remove-project name="device/google/taimen"/>
   <remove-project name="device/google/wahoo"/>
+  <remove-project name="device/qcom/common" />
   <remove-project name="platform/vendor/qcom/ferrum"/>
   <remove-project name="platform/vendor/qcom/msm8909go"/>
   <remove-project name="platform/vendor/qcom/msmnile" />
@@ -58,6 +59,7 @@
   <remove-project name="platform/vendor/qcom-opensource/data-kernel" />
   <remove-project name="platform/vendor/opensource/audio-kernel"/>
   <remove-project name="platform/vendor/qcom-opensource/power" />
+  <remove-project name="platform/prebuilts/build-tools" />
   
   <!-- Track Our AOSP repos -->
   <include name="Ours.xml" />
