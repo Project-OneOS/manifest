@@ -39,6 +39,7 @@
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/hardware/qcom/bt"/>
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
@@ -50,6 +51,9 @@
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/vendor/codeaurora/telephony" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth_ext" />
+  <remove-project name="platform/vendor/qcom-opensource/system/bt" />
   <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
   <remove-project name="platform/vendor/qcom-opensource/data-kernel" />
   <remove-project name="platform/vendor/opensource/audio-kernel"/>
