@@ -25,6 +25,7 @@ Credits:
  * [**PixelExperience**](https://github.com/PixelExperience)
  * [**Wave-Project**](https://github.com/Wave-Project)
  * [**Fred-Project**](https://github.com/FredRebase) 
+ * [**Havoc-OS**](https://github.com/Havoc-OS)
  * **ETC.**
 
 -----------------------------------------------------------------------------
