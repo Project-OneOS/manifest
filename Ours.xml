@@ -48,6 +48,7 @@
 <project path="hardware/interfaces" name="caf_hardware_interfaces" remote="test" revision="pie"/>
 <project path="hardware/ril" name="caf_hardware_ril" groups="pdk" remote="test" revision="pie"/>
 <project path="packages/apps/Settings" name="caf_packages_apps_Settings" groups="pdk-cw-fs,pdk-fs" remote="test" revision="pie" />
+<project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-cw-fs,pdk-fs" remote="ours" revision="pie" />
 <project path="packages/providers/MediaProvider" name="caf_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="test" revision="pie" />
 <project path="packages/services/Telephony" name="caf_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="test" revision="pie"/>
 <project path="packages/services/Telecomm" name="caf_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="test" revision="pie"/>
