@@ -10,7 +10,6 @@
   <project groups="aosp" name="device/generic/common" revision="2e7ec470f7dedd79bbdff73ecbdbc455bd48add5" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project groups="aosp" name="device/generic/goldfish" revision="6a722d785caa46ddd805f50ed0734fda5a992e99" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project groups="aosp" name="device/generic/goldfish-opengl" revision="d291bbd969a8cdb7bf9ac6f7d46af5b3d2b6c309" upstream="LA.AU.0.0.2.c1_rb1.12"/>
-  <project groups="aosp" name="device/generic/lionhead" revision="2632d2f2e3565494e2ee3668e93195dc7bba6128" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project groups="aosp" name="device/generic/mini-emulator-arm64" revision="27f545068f5203d7eb6c3d6db5a4cef6a6ceaa62" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project groups="aosp" name="device/generic/mini-emulator-armv7-a-neon" revision="00f5e31ff795b1fabe346196a85148973390520a" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project groups="aosp" name="device/generic/mini-emulator-x86" revision="79e6bbded1b327a93c1837a18a4978ed2cf23c71" upstream="LA.AU.0.0.2.c1_rb1.12"/>
@@ -53,7 +52,6 @@
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <project groups="aosp" name="platform/compatibility/cdd" path="compatibility/cdd" revision="cc73b6dd5bde590623d980ecd693b7130dd43b55" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project groups="aosp" name="platform/cts" path="cts" revision="15d6b909c40ef6a81b90687886237317c4287c23" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project groups="aosp" name="platform/dalvik" path="dalvik" revision="fe2aac565d887079ab0b1a1a4fc41d8c572a4a4c" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project groups="aosp" name="platform/developers/build" path="developers/build" revision="e85d785e3ec3bf32390e2eb7a242b8abdd353009" upstream="LA.AU.0.0.2.c1_rb1.12"/>
@@ -693,7 +691,6 @@
   <project groups="aosp" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="1d8b34223fcc254544e07cd5cd1885a04d03b25e" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project groups="aosp" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="0d1a0a46cea5b86be8e58c2add40a992abff0c74" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project groups="aosp" name="platform/tools/trebuchet" path="tools/trebuchet" revision="bf6734f0712deba2b08f8577a72e756e79723711" upstream="LA.AU.0.0.2.c1_rb1.12"/>
-  <project groups="aosp" name="platform/tools/vendor/google_prebuilts/arc" path="tools/vendor/google_prebuilts/arc" revision="8badc1596a12ebb55ca6c2aae72c777f402478c6" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="f112e6eb756e4a514319d84c7060b3eee447f0af" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="3665d6ec91e05c365bc28e2ed674a1c8deeb4d9a" upstream="LA.AU.0.0.2.c1_rb1.12"/>
   <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" revision="0619e04ef051834489b84c1860fce368738f0345" upstream="LA.AU.0.0.2.c1_rb1.12"/>
