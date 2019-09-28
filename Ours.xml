@@ -56,6 +56,7 @@
 <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="ours"/>
 <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="ours"/>
 <project path="prebuilts/r8" name="prebuilts_r8" remote="ours" />
+<project clone-depth="1" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="ours" />
 <project path="prebuilts/tools-caf" name="prebuilts_tools-caf" remote="ours" />
 <!--<project path="prebuilts/build-tools" name="prebuilts_build-tools" remote="ours" />-->
 <project path="system/bt" name="system_bt" groups="pdk" remote="ours"/>
