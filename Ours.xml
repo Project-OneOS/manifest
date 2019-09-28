@@ -6,11 +6,11 @@
         fetch="https://github.com/" />
 
    <remote name="ours"
-	  fetch="https://github.com/AOSP-CAF-MSM8916/"
+	  fetch="https://github.com/AOSP-CAF-Project/"
 	  revision="ten-caf" />
 
    <remote name="gitlab"
-	  fetch="https://gitlab.com/AOSP-CAF-MSM8916/"
+	  fetch="https://gitlab.com/AOSP-CAF-Project/"
 	  revision="ten-caf" />
 
    <remote name="los"
