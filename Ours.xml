@@ -71,6 +71,7 @@
 <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_commonsys_cryptfs_hw" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="ours" />
 <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ours" />
+<project path="vendor/qcom/sdclang-8.0/linux-x86" name="vendor_qcom_sdclang-8.0_linux-x86" remote="ours" />
 <project path="vendor/caf" name="vendor_caf" remote="ours"/>
 <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>
 
