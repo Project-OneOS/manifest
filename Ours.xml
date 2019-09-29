@@ -59,7 +59,7 @@
 <project path="vendor/qcom/opensource/commonsys/bluetooth" name="vendor_qcom_opensource_commonsys_bluetooth" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_commonsys_bluetooth_ext" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="ours" />
-<project path="vendor/qcom/opensource/power" name="vendor_qcom-opensource_power" remote="ours" />
+<project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ours" />
 <project path="vendor/caf" name="vendor_caf" remote="ours"/>
 <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>
 
