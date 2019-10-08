@@ -47,6 +47,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
