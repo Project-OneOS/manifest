@@ -1,8 +1,8 @@
-# AOSP CAF Project #
+# OneOS Project #
 -----------------------------------------------------------------------------
 
 <p align="center">
- <img src="https://github.com/aosp-caf-Project/manifest/blob/pie-caf/logo.png" > 
+ <img src="https://github.com/one-wip/manifest/blob/pie-caf/logo.png" > 
 </p>
 
 -----------------------------------------------------------------------------
@@ -11,7 +11,7 @@
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/AOSP-CAF-Project/manifest -b ten-caf
+repo init -u https://github.com/one-wip/manifest -b ten
 
 # Sync
 repo sync -c -jx --force-sync --no-clone-bundle --no-tags
