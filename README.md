@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------------
 
 <p align="center">
- <img src="https://github.com/one-wip/manifest/blob/pie-caf/logo.png" > 
+ <img src="https://github.com/one-wip/manifest/blob/pie/logo.png" > 
 </p>
 
 -----------------------------------------------------------------------------
