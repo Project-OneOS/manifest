@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="git://codeaurora.org/quic/la" name="caf" review="codeaurora.org"/>
+  <default remote="caf" revision="LA.AU.0.1.1_rb1.3"/>
+  <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2"/>
+  <project groups="aosp" name="device/common" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/arm64" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/armv7-a-neon" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/car" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/common" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/goldfish" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/goldfish-opengl" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/mini-emulator-arm64" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/mini-emulator-armv7-a-neon" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/mini-emulator-x86" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/mini-emulator-x86_64" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/qemu" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/uml" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/x86" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/generic/x86_64" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/google/atv" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/google/contexthub" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/google/cuttlefish" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/google/cuttlefish_common" revision="LA.AU.0.1.1_rb1.4"/>
+  <project clone-depth="1" groups="aosp" name="device/google/cuttlefish_kernel" revision="LA.AU.0.1.1_rb1.4"/>
+  <project clone-depth="1" groups="aosp" name="device/google/cuttlefish_vmm" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="device/google/vrservices" revision="LA.AU.0.1.1_rb1.4"/>
+  <project name="device/qcom/common">
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+    <linkfile dest="disregard/Android.mk" src="stop_scan.mk"/>
+  </project>
+  <project name="device/qcom/qssi"/>
+  <project name="device/qcom/sepolicy"/>
+  <project groups="aosp" name="device/sample" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="kernel/configs" revision="LA.AU.0.1.1_rb1.4"/>
+  <project name="kernel/msm-4.14"/>
+  <project groups="aosp" name="platform/art" path="art" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/bionic" path="bionic" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/bootable/recovery" path="bootable/recovery" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/build" path="build/make" revision="LA.AU.0.1.1_rb1.4">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project groups="aosp" name="platform/build/blueprint" path="build/blueprint" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/build/kati" path="build/kati" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/build/soong" path="build/soong" revision="LA.AU.0.1.1_rb1.4">
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+  <project groups="aosp" name="platform/cts" path="cts" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/dalvik" path="dalvik" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/developers/build" path="developers/build" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/development" path="development" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/ARMComputeLibrary" path="external/ARMComputeLibrary" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/ImageMagick" path="external/ImageMagick" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/Microsoft-GSL" path="external/Microsoft-GSL" revision="LA.AU.0.1.1_rb1.4"/>
+  <project name="platform/external/Open-AVB" path="external/open-avb"/>
+  <project groups="aosp" name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/aac" path="external/aac" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/adeb" path="external/adeb" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/adhd" path="external/adhd" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/android-clat" path="external/android-clat" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/androidplot" path="external/androidplot" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/ant-glob" path="external/ant-glob" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/antlr" path="external/antlr" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/apache-commons-bcel" path="external/apache-commons-bcel" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/apache-commons-compress" path="external/apache-commons-compress" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/apache-commons-math" path="external/apache-commons-math" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/apache-harmony" path="external/apache-harmony" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/apache-http" path="external/apache-http" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/apache-xml" path="external/apache-xml" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/archive-patcher" path="external/archive-patcher" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/autotest" path="external/autotest" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/avb" path="external/avb" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/bcc" path="external/bcc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/blktrace" path="external/blktrace" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/boringssl" path="external/boringssl" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/bouncycastle" path="external/bouncycastle" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/brotli" path="external/brotli" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/bsdiff" path="external/bsdiff" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/bzip2" path="external/bzip2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/caliper" path="external/caliper" revision="LA.AU.0.1.1_rb1.4"/>
+  <project name="platform/external/can-utils" path="external/can-utils"/>
+  <project groups="aosp" name="platform/external/capstone" path="external/capstone" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/catch2" path="external/catch2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/cblas" path="external/cblas" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/chromium-libpac" path="external/chromium-libpac" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/chromium-trace" path="external/chromium-trace" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/chromium-webview" path="external/chromium-webview" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/clang" path="external/clang" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/cldr" path="external/cldr" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/cmockery" path="external/cmockery" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/cn-cbor" path="external/cn-cbor" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/compiler-rt" path="external/compiler-rt" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/conscrypt" path="external/conscrypt" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/crcalc" path="external/crcalc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/cros/system_api" path="external/cros/system_api" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/curl" path="external/curl" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/dagger2" path="external/dagger2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/deqp" path="external/deqp" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/deqp-deps/SPIRV-Headers" path="external/deqp-deps/SPIRV-Headers" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/deqp-deps/SPIRV-Tools" path="external/deqp-deps/SPIRV-Tools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/deqp-deps/glslang" path="external/deqp-deps/glslang" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/desugar" path="external/desugar" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/dexmaker" path="external/dexmaker" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/dlmalloc" path="external/dlmalloc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/dng_sdk" path="external/dng_sdk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/dnsmasq" path="external/dnsmasq" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/doclava" path="external/doclava" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/dokka" path="external/dokka" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/droiddriver" path="external/droiddriver" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/drrickorang" path="external/drrickorang" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/dtc" path="external/dtc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/dynamic_depth" path="external/dynamic_depth" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/easymock" path="external/easymock" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/eigen" path="external/eigen" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/elfutils" path="external/elfutils" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/emma" path="external/emma" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/epid-sdk" path="external/epid-sdk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/error_prone" path="external/error_prone" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/expat" path="external/expat" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/fdlibm" path="external/fdlibm" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/fec" path="external/fec" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/flac" path="external/flac" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/flatbuffers" path="external/flatbuffers" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/fonttools" path="external/fonttools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/freetype" path="external/freetype" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/fsverity-utils" path="external/fsverity-utils" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/gemmlowp" path="external/gemmlowp" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/gflags" path="external/gflags" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/giflib" path="external/giflib" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/glide" path="external/glide" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/golang-protobuf" path="external/golang-protobuf" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-benchmark" path="external/google-benchmark" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-breakpad" path="external/google-breakpad" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-fonts/arbutus-slab" path="external/google-fonts/arbutus-slab" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-fonts/arvo" path="external/google-fonts/arvo" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-fonts/lato" path="external/google-fonts/lato" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-fonts/rubik" path="external/google-fonts/rubik" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-fonts/source-sans-pro" path="external/google-fonts/source-sans-pro" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-fruit" path="external/google-fruit" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/google-styleguide" path="external/google-styleguide" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/googletest" path="external/googletest" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/gptfdisk" path="external/gptfdisk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/grpc-grpc" path="external/grpc-grpc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/grpc-grpc-java" path="external/grpc-grpc-java" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/guava" path="external/guava" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/guice" path="external/guice" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/hamcrest" path="external/hamcrest" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/honggfuzz" path="external/honggfuzz" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/icu" path="external/icu" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/image_io" path="external/image_io" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/ims" path="external/ims" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/iperf3" path="external/iperf3" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/iproute2" path="external/iproute2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/iptables" path="external/iptables" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/iputils" path="external/iputils" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/iw" path="external/iw" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jacoco" path="external/jacoco" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jarjar" path="external/jarjar" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/javaparser" path="external/javaparser" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/javapoet" path="external/javapoet" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/javasqlite" path="external/javasqlite" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jcommander" path="external/jcommander" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jdiff" path="external/jdiff" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jemalloc" path="external/jemalloc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jemalloc_new" path="external/jemalloc_new" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jline" path="external/jline" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jsilver" path="external/jsilver" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jsmn" path="external/jsmn" revision="LA.AU.0.1.1_rb1.4"/>
+  <project name="platform/external/json-c" path="external/json-c" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jsoncpp" path="external/jsoncpp" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jsr305" path="external/jsr305" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/jsr330" path="external/jsr330" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/junit" path="external/junit" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/junit-params" path="external/junit-params" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/kernel-headers" path="external/kernel-headers" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/kmod" path="external/kmod" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/kotlinc" path="external/kotlinc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/ksoap2" path="external/ksoap2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libaom" path="external/libaom" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libavc" path="external/libavc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libbackup" path="external/libbackup" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libbrillo" path="external/libbrillo" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libcap" path="external/libcap" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libcap-ng" path="external/libcap-ng" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libchrome" path="external/libchrome" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libcups" path="external/libcups" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libcxx" path="external/libcxx" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libcxxabi" path="external/libcxxabi" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libdaemon" path="external/libdaemon" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libdivsufsort" path="external/libdivsufsort" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libdrm" path="external/libdrm" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libese" path="external/libese" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libevent" path="external/libevent" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libexif" path="external/libexif" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libffi" path="external/libffi" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libgav1" path="external/libgav1" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libgsm" path="external/libgsm" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libhevc" path="external/libhevc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libkmsxx" path="external/libkmsxx" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libldac" path="external/libldac" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libmpeg2" path="external/libmpeg2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libmtp" path="external/libmtp" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libnfnetlink" path="external/libnfnetlink" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libnl" path="external/libnl" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libogg" path="external/libogg" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libopus" path="external/libopus" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libpcap" path="external/libpcap" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libphonenumber" path="external/libphonenumber" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libpng" path="external/libpng" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libprotobuf-mutator" path="external/libprotobuf-mutator" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libtextclassifier" path="external/libtextclassifier" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libunwind" path="external/libunwind" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libunwind_llvm" path="external/libunwind_llvm" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libusb" path="external/libusb" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libusb-compat" path="external/libusb-compat" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libutf" path="external/libutf" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libvpx" path="external/libvpx" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libvterm" path="external/libvterm" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libxaac" path="external/libxaac" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libxcam" path="external/libxcam" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libxkbcommon" path="external/libxkbcommon" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libxml2" path="external/libxml2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/libyuv" path="external/libyuv" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/linux-kselftest" path="external/linux-kselftest" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/llvm" path="external/llvm" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/lmfit" path="external/lmfit" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/ltp" path="external/ltp" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/lua" path="external/lua" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/lz4" path="external/lz4" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/lzma" path="external/lzma" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/markdown" path="external/markdown" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/mesa3d" path="external/mesa3d" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/minigbm" path="external/minigbm" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/minijail" path="external/minijail" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/mksh" path="external/mksh" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/mockftpserver" path="external/mockftpserver" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/mockito" path="external/mockito" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/mockwebserver" path="external/mockwebserver" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/modp_b64" path="external/modp_b64" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/mp4parser" path="external/mp4parser" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/mtpd" path="external/mtpd" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/nanohttpd" path="external/nanohttpd" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/nanopb-c" path="external/nanopb-c" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/naver-fonts" path="external/naver-fonts" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/neon_2_sse" path="external/neon_2_sse" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/neven" path="external/neven" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/newfs_msdos" path="external/newfs_msdos" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/nfacct" path="external/nfacct" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/nist-pkits" path="external/nist-pkits" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/nist-sip" path="external/nist-sip" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/noto-fonts" path="external/noto-fonts" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/oauth" path="external/oauth" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/objenesis" path="external/objenesis" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/oj-libjdwp" path="external/oj-libjdwp" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/okhttp" path="external/okhttp" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/one-true-awk" path="external/one-true-awk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/opencensus-java" path="external/opencensus-java" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/openssh" path="external/openssh" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/parameter-framework" path="external/parameter-framework" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/pcre" path="external/pcre" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/pdfium" path="external/pdfium" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/perf_data_converter" path="external/perf_data_converter" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/perfetto" path="external/perfetto" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/piex" path="external/piex" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/ply" path="external/ply" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/ppp" path="external/ppp" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/proguard" path="external/proguard" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/protobuf" path="external/protobuf" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/protobuf-javalite" path="external/protobuf-javalite" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/puffin" path="external/puffin" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/Pillow" path="external/python/Pillow" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/apitools" path="external/python/apitools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/appdirs" path="external/python/appdirs" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/atomicwrites" path="external/python/atomicwrites" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/attrs" path="external/python/attrs" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/cachetools" path="external/python/cachetools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/cpython2" path="external/python/cpython2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/cpython3" path="external/python/cpython3" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/dateutil" path="external/python/dateutil" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/dill" path="external/python/dill" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/enum" path="external/python/enum" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/enum34" path="external/python/enum34" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/funcsigs" path="external/python/funcsigs" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/future" path="external/python/future" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/futures" path="external/python/futures" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/gapic-google-cloud-pubsub-v1" path="external/python/gapic-google-cloud-pubsub-v1" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/google-api-python-client" path="external/python/google-api-python-client" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/google-auth" path="external/python/google-auth" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/google-auth-httplib2" path="external/python/google-auth-httplib2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/google-cloud-core" path="external/python/google-cloud-core" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/google-cloud-pubsub" path="external/python/google-cloud-pubsub" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/google-gax" path="external/python/google-gax" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/googleapis" path="external/python/googleapis" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/grpc-google-iam-v1" path="external/python/grpc-google-iam-v1" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/grpcio" path="external/python/grpcio" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/httplib2" path="external/python/httplib2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/matplotlib" path="external/python/matplotlib" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/mock" path="external/python/mock" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/more-itertools" path="external/python/more-itertools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/numpy" path="external/python/numpy" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/oauth2client" path="external/python/oauth2client" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/olefile" path="external/python/olefile" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/packaging" path="external/python/packaging" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/parse" path="external/python/parse" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/pluggy" path="external/python/pluggy" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/ply" path="external/python/ply" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/proto-google-cloud-pubsub-v1" path="external/python/proto-google-cloud-pubsub-v1" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/protobuf" path="external/python/protobuf" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/py" path="external/python/py" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/pyasn1" path="external/python/pyasn1" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/pyasn1-modules" path="external/python/pyasn1-modules" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/pyparsing" path="external/python/pyparsing" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/pytest" path="external/python/pytest" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/requests" path="external/python/requests" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/rsa" path="external/python/rsa" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/scipy" path="external/python/scipy" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/setuptools" path="external/python/setuptools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/six" path="external/python/six" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/python/uritemplates" path="external/python/uritemplates" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/rapidjson" path="external/rapidjson" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/rappor" path="external/rappor" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/replicaisland" path="external/replicaisland" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/rmi4utils" path="external/rmi4utils" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/robolectric" path="external/robolectric" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/robolectric-shadows" path="external/robolectric-shadows" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/roboto-fonts" path="external/roboto-fonts" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/rootdev" path="external/rootdev" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/scapy" path="external/scapy" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/scrypt" path="external/scrypt" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/seccomp-tests" path="external/seccomp-tests" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/selinux" path="external/selinux" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/setupcompat" path="external/setupcompat" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/setupdesign" path="external/setupdesign" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/sfntly" path="external/sfntly" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/shaderc/spirv-headers" path="external/shaderc/spirv-headers" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/shflags" path="external/shflags" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/skia" path="external/skia" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/sl4a" path="external/sl4a" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/slf4j" path="external/slf4j" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/smali" path="external/smali" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/snakeyaml" path="external/snakeyaml" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/sonic" path="external/sonic" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/sonivox" path="external/sonivox" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/speex" path="external/speex" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/spirv-llvm" path="external/spirv-llvm" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/sqlite" path="external/sqlite" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/squashfs-tools" path="external/squashfs-tools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/strace" path="external/strace" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/stressapptest" path="external/stressapptest" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/subsampling-scale-image-view" path="external/subsampling-scale-image-view" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/swiftshader" path="external/swiftshader" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/syzkaller" path="external/syzkaller" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/tagsoup" path="external/tagsoup" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/tcpdump" path="external/tcpdump" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/tensorflow" path="external/tensorflow" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/testng" path="external/testng" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/tinyalsa" path="external/tinyalsa" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/tinycompress" path="external/tinycompress" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/tinyxml" path="external/tinyxml" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/tinyxml2" path="external/tinyxml2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/toybox" path="external/toybox" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/tremolo" path="external/tremolo" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/turbine" path="external/turbine" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/u-boot" path="external/u-boot" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/ukey2" path="external/ukey2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/unicode" path="external/unicode" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/v4l2_codec2" path="external/v4l2_codec2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/v8" path="external/v8" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/vboot_reference" path="external/vboot_reference" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/virglrenderer" path="external/virglrenderer" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/vixl" path="external/vixl" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/vogar" path="external/vogar" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/volley" path="external/volley" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/vulkan-headers" path="external/vulkan-headers" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/walt" path="external/walt" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/wayland" path="external/wayland" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/wayland-protocols" path="external/wayland-protocols" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/webp" path="external/webp" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/webrtc" path="external/webrtc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/wycheproof" path="external/wycheproof" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/xmp_toolkit" path="external/xmp_toolkit" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/xz-embedded" path="external/xz-embedded" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/xz-java" path="external/xz-java" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/yapf" path="external/yapf" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/zlib" path="external/zlib" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/zopfli" path="external/zopfli" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/external/zxing" path="external/zxing" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/av" path="frameworks/av" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/base" path="frameworks/base" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/ex" path="frameworks/ex" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/minikin" path="frameworks/minikin" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/ml" path="frameworks/ml" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/multidex" path="frameworks/multidex" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/native" path="frameworks/native" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/car/services" path="frameworks/opt/car/services" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/car/setupwizard" path="frameworks/opt/car/setupwizard" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/chips" path="frameworks/opt/chips" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/datetimepicker" path="frameworks/opt/datetimepicker" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/net/ike" path="frameworks/opt/net/ike" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/rs" path="frameworks/rs" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/hardware/google/apf" path="hardware/google/apf" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/hardware/google/av" path="hardware/google/av" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/hardware/google/easel" path="hardware/google/easel" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/hardware/google/interfaces" path="hardware/google/interfaces" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/hardware/interfaces" path="hardware/interfaces" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/hardware/invensense" path="hardware/invensense" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/hardware/libhardware" path="hardware/libhardware" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="LA.AU.0.1.1_rb1.4"/>
+  <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal"/>
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video-product.mk" src="product.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan"/>
+  <project groups="aosp" name="platform/hardware/ril" path="hardware/ril" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/libcore" path="libcore" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/libnativehelper" path="libnativehelper" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Calendar" path="packages/apps/Calendar" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Camera2" path="packages/apps/Camera2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Cluster" path="packages/apps/Car/Cluster" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Launcher" path="packages/apps/Car/Launcher" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/LensPicker" path="packages/apps/Car/LensPicker" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/LinkViewer" path="packages/apps/Car/LinkViewer" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Media" path="packages/apps/Car/Media" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Messenger" path="packages/apps/Car/Messenger" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Notification" path="packages/apps/Car/Notification" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Overview" path="packages/apps/Car/Overview" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Radio" path="packages/apps/Car/Radio" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/Stream" path="packages/apps/Car/Stream" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/externallibs" path="packages/apps/Car/externallibs" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Car/tests" path="packages/apps/Car/tests" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Dialer" path="packages/apps/Dialer" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Email" path="packages/apps/Email" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Gallery" path="packages/apps/Gallery" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Music" path="packages/apps/Music" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/PackageInstaller" path="packages/apps/PermissionController" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/SampleLocationAttribution" path="packages/apps/SampleLocationAttribution" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/TV" path="packages/apps/TV" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Tag" path="packages/apps/Tag" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Terminal" path="packages/apps/Terminal" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/ThemePicker" path="packages/apps/ThemePicker" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/TimeZoneData" path="packages/apps/TimeZoneData" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/TimeZoneUpdater" path="packages/apps/TimeZoneUpdater" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/Traceur" path="packages/apps/Traceur" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/apps/WallpaperPicker2" path="packages/apps/WallpaperPicker2" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/modules/CaptivePortalLogin" path="packages/modules/CaptivePortalLogini" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/modules/ExtServices" path="packages/modules/ExtServices" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/modules/ModuleMetadata" path="packages/modules/ModuleMetadata" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/modules/NetworkPermissionConfig" path="packages/modules/NetworkPermissionConfig" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/modules/NetworkStack" path="packages/modules/NetworkStack" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/services/AlternativeNetworkAccess" path="packages/services/AlternativeNetworkAccess" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/services/BuiltInPrintService" path="packages/services/BuiltInPrintService" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/services/Car" path="packages/services/Car" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/services/Mms" path="packages/services/Mms" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/pdk" path="pdk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/platform_testing" path="platform_testing" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/asuite" path="prebuilts/asuite" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/bundletool" path="prebuilts/bundletool" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/clang/host/darwin-x86" path="prebuilts/clang/host/darwin-x86" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/fuchsia_sdk" path="prebuilts/fuchsia_sdk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gdb/darwin-x86" path="prebuilts/gdb/darwin-x86" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/go/darwin-x86" path="prebuilts/go/darwin-x86" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/jdk/jdk9" path="prebuilts/jdk/jdk9" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/ktlint" path="prebuilts/ktlint" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/misc" path="prebuilts/misc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/python/darwin-x86/2.7.5" path="prebuilts/python/darwin-x86/2.7.5" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/r8" path="prebuilts/r8" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/tools" path="prebuilts/tools" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/vndk/v27" path="prebuilts/vndk/v27" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/prebuilts/vndk/v28" path="prebuilts/vndk/v28" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/sdk" path="sdk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/apex" path="system/apex" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/ashmemd" path="system/ashmemd" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/bpf" path="system/bpf" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/bpfprogs" path="system/bpfprogs" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/bt" path="system/bt" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/ca-certificates" path="system/ca-certificates" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/chre" path="system/chre" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/core" path="system/core" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/extras" path="system/extras" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/gatekeeper" path="system/gatekeeper" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/gsid" path="system/gsid" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/iorap" path="system/iorap" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/keymaster" path="system/keymaster" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/libfmq" path="system/libfmq" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/libhidl" path="system/libhidl" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/libhwbinder" path="system/libhwbinder" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/libsysprop" path="system/libsysprop" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/libufdt" path="system/libufdt" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/libvintf" path="system/libvintf" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/linkerconfig" path="system/linkerconfig" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/media" path="system/media" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/netd" path="system/netd" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/nfc" path="system/nfc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/nvram" path="system/nvram" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/security" path="system/security" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/sepolicy" path="system/sepolicy" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/server_configurable_flags" path="system/server_configurable_flags" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/testing/gtest_extras" path="system/testing/gtest_extras" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/timezone" path="system/timezone" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/tools/aidl" path="system/tools/aidl" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/tools/hidl" path="system/tools/hidl" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/tools/sysprop" path="system/tools/sysprop" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/tools/xsdc" path="system/tools/xsdc" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/ucontainer" path="system/ucontainer" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/update_engine" path="system/update_engine" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/system/vold" path="system/vold" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/framework" path="test/framework" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/mlts/benchmark" path="test/mlts/benchmark" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/mlts/models" path="test/mlts/models" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/suite_harness" path="test/suite_harness" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vti/alert" path="test/vti/alert" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vti/dashboard" path="test/vti/dashboard" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vti/fuzz_test_serving" path="test/vti/fuzz_test_serving" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vti/test_serving" path="test/vti/test_serving" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vts" path="test/vts" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vts-testcase/nbu" path="test/vts-testcase/nbu" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/acloud" path="tools/acloud" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/apksig" path="tools/apksig" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/apkzlib" path="tools/apkzlib" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/asuite" path="tools/asuite" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/dexter" path="tools/dexter" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/loganalysis" path="tools/loganalysis" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/metalava" path="tools/metalava" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/ndkports" path="tools/ndkports" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/repohooks" path="tools/repohooks" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/security" path="tools/security" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/test/graphicsbenchmark" path="tools/test/graphicsbenchmark" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="LA.AU.0.1.1_rb1.4"/>
+  <project groups="aosp" name="platform/tools/trebuchet" path="tools/trebuchet" revision="LA.AU.0.1.1_rb1.4"/>
+  <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer"/>
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony"/>
+  <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel"/>
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/audio"/>
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils">
+    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
+    <linkfile dest="build.sh" src="build/build.sh"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw"/>
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/data-kernel" path="vendor/qcom/opensource/data-kernel">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/data_dlkm_vendor_board.mk" src="data_dlkm_vendor_board.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices"/>
+  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices"/>
+  <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display">
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm"/>
+  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm"/>
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext"/>
+  <project name="platform/vendor/qcom-opensource/hsi2s-kernel" path="vendor/qcom/opensource/hsi2s-kernel"/>
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces"/>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils"/>
+  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power"/>
+  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext"/>
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe"/>
+  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services"/>
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools"/>
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb"/>
+  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="LA.AU.0.1.1_rb1.2"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="LA.AU.0.1.1_rb1.2"/>
+  <project name="platform/vendor/qcom/ferrum" path="device/qcom/msm8909"/>
+  <project name="platform/vendor/qcom/msm8909go" path="device/qcom/msm8909go"/>
+  <project name="platform/vendor/qcom/msmnile" path="device/qcom/msmnile"/>
+  <project name="platform/vendor/qcom/msmnileau" path="device/qcom/msmnile_au"/>
+  <project name="platform/vendor/qcom/msmnileau_gvmq" path="device/qcom/msmnile_gvmq"/>
+  <project name="platform/vendor/qcom/sdmshrikeau" path="device/qcom/sdmshrike_au"/>
+  <project name="platform/vendor/qcom/skunk" path="device/qcom/sdm845"/>
+  <project name="platform/vendor/qcom/steppe" path="device/qcom/sm6150"/>
+  <project name="platform/vendor/qcom/steppeau" path="device/qcom/sm6150_au"/>
+  <project name="platform/vendor/qcom/steppeau_gvmq" path="device/qcom/sm6150_au_gvmq"/>
+  <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996"/>
+  <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan"/>
+  <project groups="aosp" name="toolchain/pgo-profiles" revision="LA.AU.0.1.1_rb1.4"/>
+  <project name="wayland/weston" path="graphics/weston"/>
+</manifest>
