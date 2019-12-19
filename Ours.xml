@@ -80,7 +80,7 @@
 <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ours" />
 <project path="vendor/qcom/sdclang-8.0/linux-x86" name="vendor_qcom_sdclang-8.0_linux-x86" remote="ours" />
 <project path="vendor/oneos" name="vendor_oneos" remote="one"/>
-<project path="vendor/support" name="vendor_support" remote="one"/>
+<project path="vendor/overlay/Themes" name="packages_overlays_Themes" remote="one"/>
 <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>
 
 </manifest>
