@@ -21,7 +21,7 @@
 	  fetch="https://github.com/LineageOS/"
 	  revision="lineage-17.0"/>
 
-<project path="art" name="art" remote="one" />
+<project path="art" name="art" remote="ours" />
 <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" groups="pdk-fs" remote="los"/>
 <project path="packages/apps/OneCustoms" name="packages_apps_OneCustoms" groups="pdk-fs" remote="one"/>
 <project path="build/make" name="build_make" groups="pdk" remote="one" >
@@ -56,7 +56,7 @@
 <project path="hardware/interfaces" name="hardware_interfaces" remote="one"/>
 <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="one"/>
 <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-cw-fs,pdk-fs" remote="one" />
-<project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="one"/>
+<project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="ours"/>
 <project path="packages/apps/Aurora" name="packages_apps_Aurora" groups="pdk-cw-fs,pdk-fs" remote="one" />
 <project path="packages/apps/Updater" name="packages_apps_Updater" groups="pdk-cw-fs,pdk-fs" remote="one" />
 <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-cw-fs,pdk-fs" remote="one" /> 
