@@ -14,7 +14,7 @@
 	  revision="lineage-16.0"/>
 	
    <remote name="wip"
-		 fetch="http://github.com/one-wip/"
+		 fetch="http://github.com/Project-OneOS/"
 		 revision="pie" />
 
 <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" groups="pdk-fs" remote="los"/>
@@ -64,7 +64,7 @@
 <project path="vendor/qcom/opensource/commonsys/bluetooth" name="vendor_qcom_opensource_commonsys_bluetooth" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_commonsys_bluetooth_ext" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="ours" />
-<project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ours" revesion="pie-caf" />
+<project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="wip" revesion="pie-caf" />
 <project path="vendor/oneos" name="vendor_oneos" remote="wip" />
 <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>
 
