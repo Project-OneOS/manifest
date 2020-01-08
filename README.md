@@ -11,7 +11,7 @@
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/AOSP-CAF-Project/manifest -b pie-caf
+repo init -u https://github.com/one-wip/manifest -b pie
 
 # Sync
 repo sync -c -jx --force-sync --no-clone-bundle --no-tags
