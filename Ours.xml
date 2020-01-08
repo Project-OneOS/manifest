@@ -14,7 +14,7 @@
 	  revision="lineage-16.0"/>
 	
    <remote name="wip"
-		 fetch="http://github.com/one-wip/"
+		 fetch="http://github.com/Project-OneOS/"
 		 revision="pie" />
 
 <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" groups="pdk-fs" remote="los"/>
