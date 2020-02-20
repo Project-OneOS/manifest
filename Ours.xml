@@ -21,7 +21,7 @@
 	  fetch="https://github.com/LineageOS/"
 	  revision="lineage-17.1"/>
 
-<project path="art" name="art" remote="ours" />
+<project path="art" name="art" remote="one" />
 <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" groups="pdk-fs" remote="los"/>
 <project path="packages/apps/OneCustoms" name="packages_apps_OneCustoms" groups="pdk-fs" remote="one"/>
 <project path="build/make" name="build_make" groups="pdk" remote="one" >
@@ -105,7 +105,7 @@
 <project path="hardware/interfaces" name="hardware_interfaces" remote="one"/>
 <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="one"/>
 <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-cw-fs,pdk-fs" remote="one" />
-<project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="ours"/>
+<project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="one"/>
 <project path="packages/apps/Aurora" name="packages_apps_Aurora" groups="pdk-cw-fs,pdk-fs" remote="one" />
 <project path="packages/apps/Contacts" name="packages_apps_Contacts" groups="pdk-cw-fs,pdk-fs" remote="one" />
 <project path="packages/apps/Dialer" name="packages_apps_Dialer" groups="pdk-cw-fs,pdk-fs" remote="one" />
@@ -122,17 +122,17 @@
 <project path="prebuilts/tools-oneos" name="prebuilts_tools-oneos" remote="one" />
 <!--<project path="prebuilts/build-tools" name="prebuilts_build-tools" remote="ours" />-->
 <project path="system/bt" name="system_bt" groups="pdk" remote="one"/>
-<project path="system/core" name="platform_system_core" groups="pdk" remote="gitlab"/>
+<project path="system/core" name="platform_system_core" groups="pdk" remote="one"/>
 <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="one"/>
 <project path="system/vold" name="system_vold" groups="pdk" remote="one"/>
 <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="one" />
 <project path="vendor/qcom/opensource/commonsys/bluetooth" name="vendor_qcom_opensource_commonsys_bluetooth" remote="one" />
 <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_commonsys_bluetooth_ext" remote="one" />
 <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="one" />
-<project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_commonsys_cryptfs_hw" remote="ours" />
-<project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="ours" />
-<project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ours" />
-<project path="vendor/qcom/sdclang-8.0/linux-x86" name="vendor_qcom_sdclang-8.0_linux-x86" remote="ours" />
+<project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_commonsys_cryptfs_hw" remote="one" />
+<project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="one" />
+<project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="one" />
+<project path="vendor/qcom/sdclang-8.0/linux-x86" name="vendor_qcom_sdclang-8.0_linux-x86" remote="one" />
 <project path="vendor/oneos" name="vendor_oneos" remote="one"/>
 <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>
 
