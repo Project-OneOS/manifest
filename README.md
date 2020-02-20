@@ -11,7 +11,7 @@
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/inderpreetsinghb/oneos_manifest -b ten
+repo init -u https://github.com/Project-OneOS/manifest.git -b ten-staging
 
 # Sync
 repo sync -c -jx --force-sync --no-clone-bundle --no-tags
@@ -26,6 +26,7 @@ Credits:
  * [**Wave-Project**](https://github.com/Wave-Project)
  * [**Fred-Project**](https://github.com/FredRebase) 
  * [**Havoc-OS**](https://github.com/Havoc-OS)
+ * [**Potato-AOSP**](https://github.com/PotatoProject)
  * **ETC.**
 
 -----------------------------------------------------------------------------
