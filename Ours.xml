@@ -113,7 +113,7 @@
 <project path="packages/apps/Updater" name="packages_apps_Updater" groups="pdk-cw-fs,pdk-fs" remote="one" />
 <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-cw-fs,pdk-fs" remote="one" /> 
 <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-cw-fs,pdk-fs" remote="one" /> 
-<project path="packages/overlay/Themes" name="packages_overlays_Themes" remote="one"/>
+<project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="one"/>
 <!--<project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="one" />-->
 <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="one"/>
 <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="one"/>
