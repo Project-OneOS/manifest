@@ -123,6 +123,7 @@
 <!--<project path="prebuilts/build-tools" name="prebuilts_build-tools" remote="ours" />-->
 <project path="system/bt" name="system_bt" groups="pdk" remote="one"/>
 <project path="system/core" name="platform_system_core" groups="pdk" remote="one"/>
+<project path="hardware/one/interfaces" name="hardware_one_interfaces" remote="one"/>
 <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="one"/>
 <project path="system/vold" name="system_vold" groups="pdk" remote="one"/>
 <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="one" />
