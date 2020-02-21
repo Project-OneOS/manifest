@@ -133,7 +133,7 @@
 <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="one" />
 <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="one" />
 <project path="vendor/qcom/sdclang-8.0/linux-x86" name="vendor_qcom_sdclang-8.0_linux-x86" remote="one" />
-<project path="vendor/oneos" name="vendor_oneos" remote="one"/>
+<project path="vendor/one" name="vendor_one" remote="one"/>
 <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>
 
 </manifest>
