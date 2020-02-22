@@ -152,6 +152,7 @@
   <project name="platform/external/freetype" path="external/freetype" />
   <project name="platform/external/fsck_msdos" path="external/fsck_msdos" />
   <project name="platform/external/fsverity-utils" path="external/fsverity-utils" />
+  <project name="platform/external/libgav1" path="external/libgav1"/>
   <project name="platform/external/gemmlowp" path="external/gemmlowp" />
   <project name="platform/external/gflags" path="external/gflags" />
   <project name="platform/external/giflib" path="external/giflib" />
