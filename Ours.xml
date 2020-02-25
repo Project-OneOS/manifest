@@ -132,6 +132,7 @@
 <project path="vendor/qcom/opensource/commonsys/bluetooth" name="vendor_qcom_opensource_commonsys_bluetooth" remote="one" />
 <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_commonsys_bluetooth_ext" remote="one" />
 <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="one" />
+<project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" groups="qcom,pdk-qcom" remote="one" />
 <project path="vendor-qcom-opensource-display-commonsys-intf" name="vendor/qcom/opensource/commonsys-intf/display" remote="one" />  
 <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_commonsys_cryptfs_hw" remote="one" />
 <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="one" />
