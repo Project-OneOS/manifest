@@ -40,6 +40,7 @@
 <project path="bionic" name="bionic" groups="pdk" remote="one"/>
 <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="one"/>
 <project path="device/qcom/common" name="device_qcom_common" remote="one" />
+<project path="device/one/sepolicy" name="device_one_sepolicy" remote="one" />
 <project path="external/selinux" name="external_selinux" groups="pdk" remote="one"/>
 <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="los" />
 <project path="external/tinycompress" name="external_tinycompress" remote="one" />
