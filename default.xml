@@ -232,6 +232,7 @@
   <project groups="pdk,q-fs-release" name="platform/external/libexif" path="external/libexif" revision="ks-aosp.lnx.2.0.r2-rel"/>
   <project groups="pdk,q-fs-release" name="platform/external/libffi" path="external/libffi" revision="ks-aosp.lnx.2.0.r2-rel"/>
   <project groups="pdk,q-fs-release" name="platform/external/libgsm" path="external/libgsm" revision="ks-aosp.lnx.2.0.r2-rel"/>
+  <project groups="pdk,q-fs-release" name="platform/external/libgav1" path="external/libgav1" />
   <project groups="pdk,q-fs-release" name="platform/external/libhevc" path="external/libhevc" revision="ks-aosp.lnx.2.0.r2-rel"/>
   <project groups="pdk,q-fs-release" name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" revision="ks-aosp.lnx.2.0.r2-rel"/>
   <project groups="pdk,q-fs-release" name="platform/external/libkmsxx" path="external/libkmsxx" revision="ks-aosp.lnx.2.0.r2-rel"/>
