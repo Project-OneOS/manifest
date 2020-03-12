@@ -32,6 +32,7 @@
   <remove-project name="platform/vendor/qcom/wlan"/>
   <remove-project name="platform/hardware/libhardware"/>
   <remove-project name="platform/hardware/ril"/>
+  <remove-project name="platform/hardware/qcom/bootctrl"/>
   <remove-project name="platform/hardware/qcom/wlan"/>
   <remove-project name="platform/hardware/qcom/audio"/>
   <remove-project name="platform/hardware/qcom/display"/>
