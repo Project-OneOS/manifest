@@ -77,7 +77,7 @@
 <project path="hardware/one/interfaces" name="hardware_one_interfaces" remote="one"/>
 <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="one"/>
 <project path="system/vold" name="system_vold" groups="pdk" remote="one"/>
-<project path="system/update_engine" name="platform/system/update_engine" groups="pdk" remote="one" />
+<project path="system/update_engine" name="system/update_engine" groups="pdk" remote="one" />
 <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="one" />
 <project path="vendor/qcom/opensource/commonsys/bluetooth" name="vendor_qcom_opensource_commonsys_bluetooth" remote="one" />
 <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_commonsys_bluetooth_ext" remote="one" />
