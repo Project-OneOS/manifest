@@ -45,6 +45,7 @@
   <remove-project name="platform/packages/services/Telecomm" /> 
   <remove-project name="platform/bionic" />
   <remove-project name="platform/build" />
+  <remove-project name="platform/build/blueprint" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/tinycompress" />
@@ -71,6 +72,7 @@
   <remove-project name="platform/vendor/qcom-opensource/interfaces" />
   <remove-project name="platform/vendor/opensource/audio-kernel"/>
   <remove-project name="platform/vendor/qcom-opensource/power" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
   
   <!-- Track Our AOSP repos -->
   <include name="Ours.xml" />

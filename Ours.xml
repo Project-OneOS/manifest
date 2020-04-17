@@ -32,6 +32,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
 </project>
+<project path="build/blueprint" name="build_blueprint" remote="ours" />
 <project path="bionic" name="bionic" groups="pdk" remote="ours"/>
 <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="ours"/>
 <project path="device/qcom/common" name="device_qcom_common" remote="ours" />
@@ -73,6 +74,7 @@
 <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_commonsys_bluetooth_ext" remote="ours" />
 <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="ours" />
 <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="ours" />
+<project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_commonsys_cryptfs_hw" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="ours" />
 <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ours" />
