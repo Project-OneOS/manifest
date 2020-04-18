@@ -45,12 +45,6 @@
 <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="ours"/>
 <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="ours"/>
 <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="ours"/>
-<project path="hardware/qcom/audio-caf/msm8916" name="hardware_qcom_audio-caf_msm8916" remote="ours" />
-<!--<project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="ours" />-->
-<project path="hardware/qcom/display-caf/msm8916" name="hardware_qcom_display-caf_msm8916" remote="ours" />
-<project path="hardware/qcom/display" name="hardware_qcom_display" remote="ours" revision="ten-caf-8150"/>
-<project path="hardware/qcom/media" name="hardware_qcom_media" remote="ours" revision="ten-caf-8150"/>
-<project path="hardware/qcom/media-caf/msm8916" name="hardware_qcom_media-caf_msm8916" remote="ours" />
 <project path="hardware/interfaces" name="hardware_interfaces" remote="ours"/>
 <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="ours"/>
 <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-cw-fs,pdk-fs" remote="ours" />
@@ -66,7 +60,6 @@
 <project path="system/core" name="platform_system_core" groups="pdk" remote="gitlab"/>
 <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="ours"/>
 <project path="system/vold" name="system_vold" groups="pdk" remote="ours"/>
-<project path="vendor/qcom/opensource/audio-hal/primary-hal" name="hardware_qcom_audio" remote="ours" revision="ten-caf-8150"/>
 <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/bluetooth" name="vendor_qcom_opensource_commonsys_bluetooth" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_commonsys_bluetooth_ext" remote="ours" />
@@ -78,7 +71,15 @@
 <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="ours" />
 <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ours" />
 <project path="vendor/qcom/sdclang-8.0/linux-x86" name="vendor_qcom_sdclang-8.0_linux-x86" remote="ours" />
-<project path="vendor/caf" name="vendor_caf" remote="ours"/>
+<project path="vendor/caf" name="vendor_caf" remote="ours" >
+    <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
+    <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <!--<linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />-->
+    <!--<linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />-->
+</project>
 <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>
+
+  <!-- Track Our hal repos -->
+  <include name="hals.xml" />
 
 </manifest>
