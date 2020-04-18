@@ -38,7 +38,10 @@
   <remove-project name="platform/hardware/qcom/display"/>
   <remove-project name="platform/hardware/qcom/gps"/>
   <remove-project name="platform/hardware/qcom/media"/>
-  <remove-project name="kernel/msm-4.14"/>
+  <remove-project name="kernel/msm-4.19"/>
+  <remove-project name="platform/vendor/opensource/camera-kernel" />
+  <remove-project name="platform/vendor/opensource/display-drivers" />
+  <remove-project name="platform/vendor/opensource/video-driver" />
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="device/generic/x86_64"/>
   <remove-project name="device/generic/goldfish-opengl"/>
@@ -56,6 +59,7 @@
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/ant-wireless/ant_native" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />

@@ -45,6 +45,7 @@
 <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="one" />
 <project path="external/selinux" name="external_selinux" groups="pdk" remote="one"/>
 <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="los" />
+<project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="ours" />
 <project path="external/tinycompress" name="external_tinycompress" remote="one" />
 <project path="frameworks/av" name="frameworks_av" groups="pdk" revision="ten-rebase" remote="one"/>
 <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="ten-rebase" remote="one"/>
