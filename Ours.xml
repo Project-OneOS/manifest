@@ -74,8 +74,7 @@
 <project path="vendor/caf" name="vendor_caf" remote="ours" >
     <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
     <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
-    <!--<linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />-->
-    <!--<linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />-->
+    <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/msm8916/Android.mk" />
 </project>
 <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>
 
