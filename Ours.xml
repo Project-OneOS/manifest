@@ -48,10 +48,12 @@
 <project path="hardware/interfaces" name="hardware_interfaces" remote="ours"/>
 <project path="hardware/one/interfaces" name="Project-OneOS/hardware_one" remote="github" revision="master"/>
 <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="ours"/>
+<project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="ours" />
 <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-cw-fs,pdk-fs" remote="ours" />
 <project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="ours"/>
 <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-cw-fs,pdk-fs" remote="ours" />
 <project path="packages/apps/Updater" name="packages_apps_Updater" groups="pdk-cw-fs,pdk-fs" remote="ours" revision="pie" />
+<project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="ours" />
 <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="ours"/>
 <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="ours"/>
 <project path="prebuilts/r8" name="prebuilts_r8" remote="ours" />
