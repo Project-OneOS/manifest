@@ -822,6 +822,8 @@
   <project groups="aosp-android10-release,pdk" name="toolchain/pgo-profiles" revision="refs/heads/ks-aosp.lnx.2.0.r9"/>
 
   <!-- Removed projects -->
-  <include name="remove.xml" />
+  <include name="treasure/remove.xml" />
+
+  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
 </manifest>

@@ -78,10 +78,11 @@
     <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
     <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
     <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/msm8916/Android.mk" />
+    <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/msm8996/Android.mk" />
 </project>
 <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>
 
   <!-- Track Our hal repos -->
-  <include name="hals.xml" />
+  <include name="treasure/hals.xml" />
 
 </manifest>

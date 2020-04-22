@@ -85,6 +85,6 @@
   <remove-project name="platform/vendor/qcom-opensource/fst-manager" />
   
   <!-- Track Our AOSP repos -->
-  <include name="Ours.xml" />
+  <include name="treasure/ours.xml" />
 
 </manifest>
