@@ -717,6 +717,7 @@
   <project groups="aosp-android10-release,pdk,projectarch,vts" name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="refs/heads/ks-aosp.lnx.2.0.r9"/>
   <project groups="aosp-android10-release,pdk,vts" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="refs/heads/ks-aosp.lnx.2.0.r9"/>
   <project groups="aosp-android10-release,pdk,projectarch,tools,tradefed,vts" name="platform/tools/acloud" path="tools/acloud" revision="refs/heads/ks-aosp.lnx.2.0.r9"/>
+  <project groups="aosp-android10-release,pdk,tradefed" name="platform/tools/apifinder" path="tools/apifinder" revision="refs/heads/ks-aosp.lnx.2.0.r9"/>
   <project groups="aosp-android10-release,pdk,tradefed" name="platform/tools/apksig" path="tools/apksig" revision="refs/heads/ks-aosp.lnx.2.0.r9"/>
   <project groups="aosp-android10-release,pdk,tradefed" name="platform/tools/apkzlib" path="tools/apkzlib" revision="refs/heads/ks-aosp.lnx.2.0.r9"/>
   <project groups="aosp-android10-release,pdk" name="platform/tools/asuite" path="tools/asuite" revision="refs/heads/ks-aosp.lnx.2.0.r9"/>
