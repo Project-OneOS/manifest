@@ -30,9 +30,11 @@
   <remove-project name="platform/vendor/qcom/msmnile" />
   <remove-project name="platform/vendor/qcom/thulium"/>
   <remove-project name="platform/vendor/qcom/wlan"/>
+  <remove-project name="platform/vendor/qcom-opensource/dataservices"/>
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr"/>
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf"/> 
   <remove-project name="platform/hardware/libhardware"/>
   <remove-project name="platform/hardware/ril"/>
-  <remove-project name="platform/hardware/qcom/bootctrl"/>
   <remove-project name="platform/hardware/qcom/wlan"/>
   <remove-project name="platform/hardware/qcom/audio"/>
   <remove-project name="platform/hardware/qcom/display"/>
@@ -88,6 +90,6 @@
   <remove-project name="platform/vendor/qcom-opensource/fst-manager"/>
   
   <!-- Track Our AOSP repos -->
-  <include name="Ours.xml" />
+  <include name="snippets/Ours.xml" />
 
 </manifest>

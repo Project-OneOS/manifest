@@ -5,7 +5,7 @@
            fetch="git://codeaurora.org/quic/la"
            review="codeaurora.org"/>
 
-  <default revision="refs/tags/LA.UM.8.12.r1-10400-sm8250.0"
+  <default revision="refs/tags/LA.UM.8.12.r1-13100-sm8250.0"
 	   remote="caf"
 	   sync-j="4"
 	   sync-c="true"/>
@@ -484,7 +484,6 @@
   <project groups="aosp-android10-release,pdk" name="platform/hardware/nxp/nfc" path="hardware/nxp/nfc" revision="refs/heads/ks-aosp.lnx.2.0.r9"/>
   <project groups="aosp-android10-release,pdk" name="platform/hardware/nxp/secure_element" path="hardware/nxp/secure_element" revision="refs/heads/ks-aosp.lnx.2.0.r9"/>
   <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" revision="refs/heads/audio-hal.lnx.6.0.r7"/>
-  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="refs/heads/android-blast.lnx.4.0.r9"/>
   <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="refs/heads/display.lnx.6.0.r1">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
@@ -823,6 +822,6 @@
   <project groups="aosp-android10-release,pdk" name="toolchain/pgo-profiles" revision="refs/heads/ks-aosp.lnx.2.0.r9"/>
 
   <!-- Removed projects -->
-  <include name="remove.xml" />
+  <include name="snippets/remove.xml" />
 
 </manifest>
