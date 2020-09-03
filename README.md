@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------------
 
 <p align="center">
- <img src="https://github.com/one-wip/manifest/blob/pie/logo.png" > 
+ <img src="https://github.com/Project-OneOS/manifest/blob/ten-staging/logo.png" > 
 </p>
 
 -----------------------------------------------------------------------------
