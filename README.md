@@ -11,7 +11,7 @@
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/AOSP-CAF-Project/manifest -b ten-caf
+repo init -u https://github.com/AOSP-CAF-Project/manifest -b eleven-caf
 
 # Sync
 repo sync -c -jx --force-sync --no-clone-bundle --no-tags
