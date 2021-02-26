@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image name="LA.QSSI.11.0.r1" project="la/system/manifest" server="git://git-android.quicinc.com" tag="AU_LINUX_ANDROID_LA.QSSI.11.0.R1.11.00.00.668.102" targets="qssi"/>
+  </refs>
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <default remote="caf" revision="partner-android/r-fs-release"/>
+  <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="db9c537f395ec6f39e87052bede5c5303f3209f6" upstream="refs/heads/uefi.lnx.2.1.r16-rel"/>
+  <project name="device/qcom/common" revision="faacfc3e4acf3f1abe69f2f73bb6240a766d95e5" upstream="refs/heads/qcom-devices.lnx.6.0.r14-rel">
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <project name="device/qcom/sepolicy_vndr" revision="54a8a2527603ebc4970beb9c3342aed25718d7b7" upstream="refs/heads/sepolicy.vndr.lnx.1.0.r11-rel"/>
+  <project name="device/qcom/vendor-common" revision="63dfc25593e1d6f159ba114e88156f4736bb405c" upstream="refs/heads/qcom-devices.lnx.6.0.r14-rel"/>
+  <project name="kernel/build" path="device/qcom/kernelscripts" revision="26292755994b5bc710336511c25a2d365bc27c2f" upstream="refs/heads/kernel.lnx.5.4.r3-rel"/>
+  <project groups="cyborg" name="kernel/msm-5.4" revision="705f90f24d137532aef9f414913dfae5fe9bc249" upstream="refs/heads/kernel.lnx.5.4.r3-rel"/>
+  <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" revision="1e3964651779a2b2d7243fcc00a4dd1f376da94f" upstream="refs/heads/audio-hal.lnx.8.0.r15-rel"/>
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="96635c03843efe8363da29940a78329328cbabeb" upstream="refs/heads/android-core.lnx.6.0.r14-rel"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="f7a7804f859aad80e12d5e965d5795dc986544de" upstream="refs/heads/display.lnx.7.0.r3-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="01c203f6574fcf75ef937ebe8530318f1c8b68bf" upstream="refs/heads/location.lnx.6.0.r13-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="453a2e67c0bc0af9989ecf4d72eddea789b867c8" upstream="refs/heads/lnx.omx.core.1.0.r2-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video-product.mk" src="product.mk"/>
+  </project>
+  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" revision="c9fddbc1587b710e53520c30cf54d2bba9f676c4" upstream="refs/heads/ppat-corepower.lnx.1.0.r14-rel"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="067b7f7a764bded73dc9fb8cb3e84e09f061ce57" upstream="refs/heads/wlan-aosp.lnx.6.0.r11-rel"/>
+  <project name="platform/packages/apps/SnapdragonCamera" path="vendor/codeaurora/packages/apps/SnapdragonCamera" revision="993bfaf9973f258fc8504e9408d207c32f0c599a" upstream="refs/heads/camera-SnapdragonCamera.lnx.4.0.r4-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/app_snapcam_product.mk" src="app_snapcam_system_product.mk"/>
+  </project>
+  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" revision="1b6053c5cdca6ef02fc970a17f47db8ad7007f32" upstream="refs/heads/wlan-service.lnx.6.0.r11-rel"/>
+  <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" revision="388b6c452998cc3a89e9ac7e2d6f857e162f6963" upstream="refs/heads/nfc.vendor.lnx.2.0.r7-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" revision="7d333fb9415ce10a293010fe32ffed7430f69396" upstream="refs/heads/nfc.vendor.lnx.2.0.r7-rel"/>
+  <project groups="cyborg" name="platform/vendor/opensource/audio-kernel" path="kernel/msm-5.4/techpack/audio" revision="b8af20389d3800dc0bcccad13303479b27152130" upstream="refs/heads/audio-drivers.lnx.5.0.r2-rel"/>
+  <project groups="cyborg" name="platform/vendor/opensource/camera-kernel" path="kernel/msm-5.4/techpack/camera" revision="537514402536bcf28994ef1c33d098b657aebd15" upstream="refs/heads/camera-kernel.lnx.4.0.r2-rel"/>
+  <project groups="cyborg" name="platform/vendor/opensource/dataipa" path="kernel/msm-5.4/techpack/dataipa" revision="357e3ced1ddb5b245058ebcf798f3c74123b630f" upstream="refs/heads/data-kernel.lnx.1.1.r2-rel"/>
+  <project groups="cyborg" name="platform/vendor/opensource/display-drivers" path="kernel/msm-5.4/techpack/display" revision="1c0f9fe0198c89d34c8a0310e57a8b64edb2023a" upstream="refs/heads/display-kernel.lnx.5.4.r3-rel"/>
+  <project groups="cyborg" name="platform/vendor/opensource/video-driver" path="kernel/msm-5.4/techpack/video" revision="79acffd8005d68a5db48edb6d7e90e06ab15dfc6" upstream="refs/heads/video-kernel.lahaina.lnx.1.0.r2-rel"/>
+  <project name="platform/vendor/qcom-opensource/audio-hal/st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" revision="f7c53cd1fc97dd003cc397800436d9c0b7bb2387" upstream="refs/heads/audio-hal.lnx.8.0.r15-rel"/>
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="f05397ebc5249778dc8515f9d12c8e31062f5ecd" upstream="refs/heads/data.lnx.6.0.r13-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="0fb7abe717fab15465cc508e1952991147d96316" upstream="refs/heads/data.lnx.6.0.r13-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataservices_vendor_product.mk" src="dataservices_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="8c98e1d8b44806ee6765de339107f2f3cb64e427" upstream="refs/heads/data.lnx.6.0.r13-rel"/>
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="4ec9f5921418eaf2df2f9bb6eb6cd52fae6ed780" upstream="refs/heads/wigig-vndr.lnx.6.0.r9-rel"/>
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" revision="246580cd3dee26cf8548719a46e3d282cd3260ad" upstream="refs/heads/android-core.lnx.6.0.r14-rel"/>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="5fe10801452e7071f7b53821e53bac403686afc8" upstream="refs/heads/location.lnx.6.0.r13-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="b71650dabd1782fecec43aa37bce96e727d69301" upstream="refs/heads/core-technologies.lnx.3.0.r14-rel"/>
+  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" revision="8de71c661df760a6f927dc2140974fe0e3a9340c" upstream="refs/heads/power.lnx.4.0.r1-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/power-vendor-board.mk" src="power-vendor-board.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" revision="42d834afdd5fdfb1f39c54107c3fdfc31e0c2486" upstream="refs/heads/android-core.lnx.6.0.r14-rel"/>
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="214ece874ced71fcbeb2fbc0a218b0824be60c34" upstream="refs/heads/data.lnx.6.0.r13-rel"/>
+  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" revision="3f329d2a3d8d0be00b55a1128852bb0c189b63f1" upstream="refs/heads/android-core.lnx.6.0.r14-rel"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="4392352f2d649266057459dca6a3944a750f7aee" upstream="refs/heads/core-technologies.lnx.3.0.r14-rel"/>
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="ffb30119e532099696ceed32f3ddc48ee6ae6ac4" upstream="refs/heads/opensource-tools.lnx.1.0.r110-rel"/>
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" revision="56f8dab4d6d56d373490dc7a80ee58b1a9079f4d" upstream="refs/heads/core-technologies.lnx.3.0.r14-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator" revision="6c1dbf98a30cb5c06fd88caeb17656b97763ee1e" upstream="refs/heads/core-technologies.lnx.3.0.r14-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/vibrator_product.mk" src="vibrator-vendor-product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" revision="5b1bdbbfdb2410cbe304fc402047df67604409a7" upstream="refs/heads/wigig-vndr.lnx.6.0.r9-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="3c3e81c03ed2ff3e987cdaaf7f4a46f465d84c62" upstream="refs/heads/wlan-api.lnx.1.0.r55-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="b02703ed358ae31150d208676695f94a8c9f805c" upstream="refs/heads/wlan-cmn.driver.lnx.2.0.r22-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="11331df856c13f3d6bb5e443c852448154a3ffc6" upstream="refs/heads/wlan-cld3.driver.lnx.2.0.r22-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="0153b8aedfbaac4fd67a32cddaf51334a6e1cd32" upstream="refs/heads/wlan-service.lnx.6.0.r11-rel"/>
+  <project name="platform/vendor/qcom/holi" path="device/qcom/holi" revision="4ce2ceb8dc5e7f47681f4ccbdfd378bd8f82cc5d" upstream="refs/heads/qcom-devices.lnx.6.0.r14-rel"/>
+  <project name="platform/vendor/qcom/kona" path="device/qcom/kona" revision="1b5aff60b6a1352e16b1e1284eaf34b859bc4c5a" upstream="refs/heads/qcom-devices.lnx.6.0.r14-rel"/>
+  <project name="platform/vendor/qcom/lahaina" path="device/qcom/lahaina" revision="47bfb636ba67f6041606a21dfacb2b7c89c910fb" upstream="refs/heads/qcom-devices.lnx.6.0.r14-rel"/>
+  <project name="platform/vendor/qcom/opensource/datarmnet" path="vendor/qcom/opensource/datarmnet" revision="0852f266be1e316a178b0e81b312fde09928c904" upstream="refs/heads/data-kernel.lnx.1.1.r2-rel">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_dlkm_vendor_board.mk" src="datarmnet_dlkm_vendor_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_dlkm_vendor_product.mk" src="datarmnet_dlkm_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom/opensource/datarmnet-ext" path="vendor/qcom/opensource/datarmnet-ext" revision="aacb4bb3afa09bcd8666f70af659432c68e147ac" upstream="refs/heads/data-kernel.lnx.1.1.r2-rel">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_ext_dlkm_vendor_board.mk" src="datarmnet_ext_dlkm_vendor_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_ext_dlkm_vendor_product.mk" src="datarmnet_ext_dlkm_vendor_product.mk"/>
+  </project>
+  <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="8aa37ffe4a50f354a912c5476a3a37b9997c3c3f" upstream="refs/heads/wlan-service.lnx.6.0.r11-rel"/>
+</manifest>
