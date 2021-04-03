@@ -7,17 +7,21 @@
 
    <remote name="ours"
 	  fetch="https://github.com/AOSP-CAF-Project/"
-	  revision="ten-caf" />
+	  revision="eleven-caf" />
 
    <remote name="gitlab"
 	  fetch="https://gitlab.com/AOSP-CAF-Project/"
-	  revision="ten-caf" />
+	  revision="eleven-caf" />
 
    <remote name="los"
 	  fetch="https://github.com/LineageOS/"
-	  revision="lineage-17.0"/>
+	  revision="lineage-18.1"/>
 
-<project path="art" name="art" remote="ours" />
+   <remote name="pa"
+	  fetch="https://github.com/AOSPA/"
+	  revision="ruby"/>
+
+<!--<project path="art" name="art" remote="ours" />-->
 <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" groups="pdk-fs" remote="los"/>
 <project path="build/make" name="build_make" groups="pdk" remote="ours" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -32,19 +36,19 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
 </project>
-<project path="build/blueprint" name="build_blueprint" remote="ours" />
+<!--<project path="build/blueprint" name="build_blueprint" remote="ours" />
 <project path="bionic" name="bionic" groups="pdk" remote="ours"/>
-<project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="ours"/>
-<project path="device/qcom/common" name="device_qcom_common" remote="ours" />
-<project path="external/selinux" name="external_selinux" groups="pdk" remote="ours"/>
+<project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="ours"/>-->
+<project path="device/qcom/common" name="android_device_qcom_common" remote="pa" />
+<project path="device/qcom/kernelscripts" name="android_kernel_build" remote="pa" />
+<project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="los" />
 <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="los" />
-<project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="ours" />
-<project path="external/tinycompress" name="external_tinycompress" remote="ours" />
+<project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="los" />
+<!--<project path="external/tinycompress" name="external_tinycompress" remote="ours" />
 <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="ours"/>
 <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="ours"/>
 <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="ours"/>
 <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="ours"/>
-<project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="ours"/>
 <project path="hardware/interfaces" name="hardware_interfaces" remote="ours"/>
 <project path="hardware/one/interfaces" name="Project-OneOS/hardware_one" remote="github" revision="master"/>
 <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="ours"/>
@@ -56,31 +60,42 @@
 <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="ours" />
 <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="ours"/>
 <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="ours"/>
-<project path="prebuilts/r8" name="prebuilts_r8" remote="ours" />
-<project clone-depth="1" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="ours" />
-<project path="prebuilts/tools-caf" name="prebuilts_tools-caf" remote="ours" />
-<project path="system/bt" name="system_bt" groups="pdk" remote="ours"/>
-<project path="system/core" name="platform_system_core" groups="pdk" remote="gitlab"/>
-<project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="ours"/>
+<project path="prebuilts/r8" name="prebuilts_r8" remote="ours" />-->
+<project path="platform_testing" name="platform_testing" remote="ours" />
+<project clone-depth="1" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="los" />
+<project clone-depth="1" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="los" />
+<!--<project path="prebuilts/tools-caf" name="prebuilts_tools-caf" remote="ours" />-->
+<!--<project path="system/bt" name="system_bt" groups="pdk" remote="ours"/>-->
+<project path="system/core" name="system_core" groups="pdk" remote="gitlab"/>
+<!--<project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="ours"/>
 <project path="system/vold" name="system_vold" groups="pdk" remote="ours"/>
 <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/bluetooth" name="vendor_qcom_opensource_commonsys_bluetooth" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_commonsys_bluetooth_ext" remote="ours" />
-<project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="ours" />
+<project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="ours" />-->
 <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="ours" />
-<project path="vendor/qcom/opensource/commonsys/fm" name="vendor_qcom_opensource_fm-commonsys" remote="ours" />
+<!--<project path="vendor/qcom/opensource/commonsys/fm" name="vendor_qcom_opensource_fm-commonsys" remote="ours" />-->
 <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" remote="ours" />
 <project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_commonsys_cryptfs_hw" remote="ours" />
-<project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="ours" />
-<project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ours" />
-<project path="vendor/qcom/sdclang-8.0/linux-x86" name="vendor_qcom_sdclang-8.0_linux-x86" remote="ours" />
-<project path="vendor/caf" name="vendor_caf" remote="ours" >
+<project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="ours" />
+<!--<project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="ours" />
+<project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ours" />-->
+<project path="vendor/qcom/sdclang" name="ThankYouMario/proprietary_vendor_qcom_sdclang" remote="github" revision="ruby" />
+<project path="vendor/one" name="Project-OneOS/vendor_one" remote="github" revision="eleven-caf" >
     <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
-    <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <!--<linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
     <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/msm8916/Android.mk" />
-    <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/msm8996/Android.mk" />
+    <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/msm8996/Android.mk" />-->
+    <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/msm8998/Android.mk" />
+    <linkfile src="scripts/os_pickup.mk" dest="vendor/qcom/opensource/audio-hal/primary-hal/Android.mk" />
+    <linkfile src="scripts/os_pickup.bp" dest="hardware/qcom/sm8150/Android.bp" />
+    <!--<linkfile src="scripts/os_pickup.bp" dest="hardware/qcom/sdm845/Android.bp" />
+    <linkfile src="scripts/os_pickup.bp" dest="hardware/qcom/msm8916/Android.bp" />
+    <linkfile src="scripts/os_pickup.bp" dest="hardware/qcom/msm8996/Android.bp" />-->
+    <linkfile src="scripts/os_pickup.bp" dest="hardware/qcom/msm8998/Android.bp" />
+    <linkfile src="scripts/os_pickup.bp" dest="vendor/qcom/opensource/audio-hal/primary-hal/Android.bp" />
 </project>
-<project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>
+<!--<project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="los"/>-->
 
   <!-- Track Our hal repos -->
   <include name="treasure/hals.xml" />

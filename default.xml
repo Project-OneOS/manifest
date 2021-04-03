@@ -769,7 +769,7 @@
   <include name="vendor.xml" />
 
   <!-- Removed projects -->
-  <!--<include name="treasure/remove.xml" />-->
+  <include name="treasure/remove.xml" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
