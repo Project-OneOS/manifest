@@ -6,15 +6,22 @@
 </p>
 
 -----------------------------------------------------------------------------
-### Sync ###
+To initialize your local repository, use a command like this:
 
 ```bash
-
-# Initialize local repository
 repo init -u https://github.com/one-wip/manifest -b pie
 
-# Sync
-repo sync -c -jx --force-sync --no-clone-bundle --no-tags
+```
+or to save bandwith and space 
+
+```bash
+repo init -u https://github.com/one-wip/manifest -b pie --depth=1
+```
+
+Then to sync up:
+
+```
+repo sync -c -f --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j8
 ```
 
 -----------------------------------------------------------------------------
