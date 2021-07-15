@@ -8,6 +8,10 @@
    <remote name="ours"
 	  fetch="https://github.com/AOSP-CAF-Project/"
 	  revision="eleven-caf" />
+	
+   <remote name="one"
+	  fetch="https://github.com/Project-OneOS/"
+	  revision="eleven-caf" />
 
    <remote name="gitlab"
 	  fetch="https://gitlab.com/AOSP-CAF-Project/"
@@ -81,7 +85,7 @@
 <!--<project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="ours" />
 <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="ours" />-->
 <project path="vendor/qcom/sdclang" name="ThankYouMario/proprietary_vendor_qcom_sdclang" remote="github" revision="ruby" />
-<project path="vendor/one" name="Project-OneOS/vendor_one" remote="github" revision="eleven-caf" >
+<project path="vendor/one" name="vendor_one" remote="one" revision="eleven-caf" >
     <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
     <!--<linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
     <linkfile src="scripts/os_pickup.mk" dest="hardware/qcom/msm8916/Android.mk" />
